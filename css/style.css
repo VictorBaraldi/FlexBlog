@@ -162,24 +162,34 @@ img {
   background-color: rgba(247, 247, 247, 0.986);
   display: flex;
   padding: 60px;
-  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .planos div {
   border: solid 4px #fff;
-  padding: 40px 120px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 300px;
 }
 
 .planos h2 {
-  padding: 20px 100px;
+  margin-top: 20px;
+  text-align: center;
 }
 
-.planos p {
+.planos span {
   border-top: solid 4px #fff;
   border-bottom: solid 4px #fff;
-  padding: 0px 0;
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
   text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-  height: 66px;
+  font-weight: bold;
+  padding: 10px 0 5px 0;
+  font-size: 3em;
+}
+
+.planos sup {
+  font-size: 1.5rem;
 }
